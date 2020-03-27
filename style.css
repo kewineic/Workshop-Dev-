@@ -1,0 +1,313 @@
+body{
+    margin: 0px;
+    background: #e5e5e5;
+    color: #25282b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.hide{
+    overflow: hidden;
+}
+
+a {
+    color: #ff5e84;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#container{ 
+    /*se a tela for menor que a largura máxima é definida por porcentagem*/
+    width: 80%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+}
+
+#intro{
+    width: 300px;
+    margin-right:64px ;
+}
+
+main {
+    margin: 32px 0px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+
+button {
+    color:#ff5e84;
+    border: none;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    outline: none;
+
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: .2px;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.fat{
+    font-size: 14px;
+    color: white;
+    background: #ff5e84;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, .16);
+}   
+
+footer {
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: .2px;
+
+    color: #777;
+}
+
+footer a{
+    opacity: .7;
+}
+
+.idea{
+    display: flex;
+    background-color: #fff;
+    padding: 32px;
+    margin-bottom:32px ;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px -8px rgba(1,1,1,.1);
+}
+
+.idea img {
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+
+.idea h3{
+    margin: 0px;
+}
+
+.idea p{
+    margin: 8px 0px;
+}
+
+.ideia .description{
+    margin: 16px 0px;
+}
+
+#modal {
+ 
+    background: #ff5e84;
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+
+    transition: .4s;
+}
+
+div#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+div#modal.add_scroll {
+    overflow: auto;
+}
+
+
+#modal .content{
+    margin-top: 3%;
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input, form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, .5);
+    outline: none;
+    font-size: 16px;
+
+}
+
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: .8px;
+    
+}
+
+form a {
+    width: 150px;
+    height: 40px;
+
+    background-color: #ffffff22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    align-self: end;
+
+    transition: .4s;
+}
+
+form a:hover{
+    background-color: #fff;
+    color: #ff5e84;
+    text-decoration: none;
+
+}
+
+form button{
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+}
+
+form button:hover{
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+}
+
+#page-ideias #container{
+    display: block;
+}
+
+#page-ideias header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideias nav{
+    display: flex;
+    align-items: center;
+}
+
+#page-ideias nav li{
+    list-style-type: none;
+    margin-right: 16px;
+}   
+
+#page-ideias nav li a {
+    color: #25292b;
+}
+
+ #intro a.fat, #page-ideias nav li:last-child {
+    margin: 0px;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #ff5e84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    transition: .4s;
+
+}
+
+#intro a.fat:hover, #page-ideias nav li:last-child:hover{
+    background-color: #0984e3;
+    text-decoration: none;
+}
+
+
+#page-ideias nav li:last-child a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+   
+}
+
+#page-ideias nav li:last-child a:hover {
+    text-decoration: none;
+}
+
+section#title {
+    text-align: center;
+    margin: 64px 0px;
+}
+
+section#title p {
+    opacity: .7;
+    margin: 0px;
+}
+
+section#title h1{
+    margin: 0px;
+    font-size: 28px;
+    
+}
+
+section#ideias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideias .idea{
+    margin: 0px;
+}
