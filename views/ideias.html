@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "page-ideias" %}
+
+{% block title %}
+    <title>Ideias</title>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <a href="/"><img src="logo.png" alt="Imagem da logomarca."></a>
+        <nav>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#" onclick="onOff()">Nova ideia</a></li>
+        </nav>
+    </header>
+
+    <section id="title">
+        <p>Em exibiçao</p>
+        <h1>Ideias</h1>
+    </section>
+
+    <main>
+        <section id="ideias">
+            {% include "all_ideas.html" %}
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/kewin.ferreira.3" target="_blank">KewinCosta</a>
+    </footer>
+{% endblock %}
